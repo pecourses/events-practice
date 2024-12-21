@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
         onUpdate: 'CASCADE',
       });
       User.belongsToMany(models.Event, {
-        foreignKey: { name: 'userId', allowNull: fasle },
+        foreignKey: { name: 'userId', allowNull: false },
         through: 'Participation',
         as: 'participant',
         onDelete: 'CASCADE',
