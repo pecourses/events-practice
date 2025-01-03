@@ -1,0 +1,2 @@
+### 10 events
+GET http://localhost:5000/api/categories HTTP/1.1
